@@ -21,4 +21,4 @@ Connection(URL);
 if (process.env.NODE_ENV === 'production') {
   app.use(express.static('/udma/build'));
 }
-app.listen(5000, () => console.log(`server is on ${port}`));
+app.listen(port, () => console.log(`server is on ${port}`));
